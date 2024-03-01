@@ -4,7 +4,7 @@ void main() {
   List<String> noms = [];
   for (int i = 0; i < 5; i++) {
     stdout.write('Entrez le nom numéro ${i + 1}: ');
-    String nom = stdin.readLineSync()!;
+    String nom = stdin.readLineSync() ?? "unknown";
     noms.add(nom);
   }
   print('Liste avant suppression du deuxième nom : $noms');
