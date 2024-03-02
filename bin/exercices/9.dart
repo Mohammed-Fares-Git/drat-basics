@@ -6,12 +6,12 @@ void main(List<String> args) {
 
   do{
     stdout.write('- entrer un nombre positif :');
-    input =  (stdin.readLineSync() ?? 0) as int;
+    input =  int.parse(stdin.readLineSync() ?? '0');
     if(input < 0){
       isInvalid = true;
-      stderr.write('- wah khona !!');
+      stderr.write('- wah khona !!\n');
     } else {
-      isInvalid = true;
+      isInvalid = false;
     }
   } while(isInvalid);
 

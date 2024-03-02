@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main(List<String> args) {
   stdout.write('- entrer votre age :');
-  int age = (stdin.readLineSync() ?? 20) as int;
+  int age = int.parse(stdin.readLineSync() ?? '20');
 
   String message;
 
